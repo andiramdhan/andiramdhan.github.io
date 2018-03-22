@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <style>
@@ -5,7 +7,6 @@
     border: 3px solid #f1f1f1;
     margin: 20px 300px 20px 300px;
 }
-
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -14,7 +15,6 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
 button {
     background-color: #4CAF50;
     color: white;
@@ -24,36 +24,28 @@ button {
     cursor: pointer;
     width: 100%;
 }
-
 button:hover {
     opacity: 0.8;
 }
-
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
-
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
 }
-
 img.avatar {
     width: 10%;
 }
-
 .container {
     padding: 16px;
 }
-
 span.psw {
     float: right;
     padding-top: 16px;
 }
-
-
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
@@ -68,16 +60,9 @@ span.psw {
 <body>
 
 <div class="form">
-  <div class="imgcontainer">
-    <img src="logo.png" alt="Avatar" class="avatar">
-  </div>
-
   <div class="container">
     <label><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button onclick="login()">Login</button>
   </div>
@@ -88,9 +73,8 @@ span.psw {
     function login() {
     var name = document.getElementsByName("uname")[0].value;
     var pass = document.getElementsByName("psw")[0].value;
-
-    if(name == "meter" && pass == "plaju" ) {
-        var myWindow = window.open("status_meter_plaju_jan.html", "_self");
+    if(name == "rentall"  ) {
+        var myWindow = window.open("rentall.html", "_self");
     }
 }
 </script>
@@ -98,3 +82,5 @@ span.psw {
 
 </body>
 </html>
+
+

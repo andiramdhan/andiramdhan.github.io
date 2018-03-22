@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: Open Sans;
+    line-height: 1.42857143;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+body a {
+  text-decoration: none;
+}
+
+input, button, select, textarea {
+
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Open Sans';
+    line-height: 1.1;
+}
+
+/* Style the header */
+.header-bot {
+    display: table;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+   /* height: 300px;  Should be removed. Only for demonstration */
+}
+
+.logo {
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logo span {
+  background: #000;
+  padding: 0 17px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo h1 a{
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #080;
+  position: relative;
+}
+
+.search_form {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  font-size: 100%;
+  position: relative;
+  min-height: 1px;
+  /*border-radius: 25px;*/
+}
+
+.cart {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  font-size: 100%;
+  position: relative;
+  min-height: 1px;
+
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+    /* Clear floats after the columns */
+.clearfix:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /* Clear floats after the columns */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+input[type = search] {
+  width: 83%;
+  outline: none;
+  padding: 12px 10px;
+  color: #848484;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  letter-spacing: 1px;
+  margin: 0;
+  /*border-radius: 5px;*/
+}
+
+input[type = submit] {
+  background: url(./images/search.png) no-repeat 4px 0px #2fdab8;
+  width: 13%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+    }
+    .search_form {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header-bot " style="background-color:#f1f1f1;">
+  <div class="row">
+
+    <div class="logo" ">
+      <h1><a href="index.html">
+        <span>R</span> 
+        ENT ALL 
+        <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+    </div>
+
+    <div class="search_form" >
+      <form action="#" method="post" >
+            <input name="search" placeholder="Search here..." required="" type="search">
+            <input value=" " type="submit">
+      </form>
+    </div>
+
+    <div class="cart">
+      <a href="#" >Cart</a>
+    </div>
+    <div class= "clearfix"></div>
+
+    <div class="w3-bar w3-light-grey">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">motor</a>
+    <a href="#" class="w3-bar-item w3-button">pesawat</a>
+    <a href="#" class="w3-bar-item w3-button">game</a>
+    <a href="#" class="w3-bar-item w3-button">speedboat</a>
+    <a href="#" class="w3-bar-item w3-button">PW</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">mobil</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">sedan</a>
+        <a href="#" class="w3-bar-item w3-button">jeep</a>
+        <a href="#" class="w3-bar-item w3-button">suv</a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/airwolf.jpg" alt="airwolf" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>airwolf</b></p>
+        <p>bisa disewa pada saat mudik. badung jakarta kurang dari 1 jam.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/avanza.jpg"" alt="avanza" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>avanza</b></p>
+        <p>Ga perlu takut gengsi klo pake mobil ini. hampir semua orang pernah merasakan mobil ini. ibarat HP sama dengan nokia 3310</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="./images/batikair.jpg"" alt="batikair" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>batik air</b></p>
+        <p>Pesawat dengan harga yang lumayan. di perjalanan bisa nonton film.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/citilink.jpg"" alt="citilink" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>citilink</b></p>
+        <p>anda suka pantun? pesawat ini menghibur anda dengan pantun-pantunnya.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/garuda.jpg"" alt="garuda" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>garuda</b></p>
+        <p>pesawat dengan kualitas dan pelayanan yang bagus tapi klo terbang keluar negri. klo dalem negri mending pake yang lebih murah saja.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="./images/knightrider.jpg"" alt="knightrider" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>knightrider</b></p>
+        <p>Perjalanan anda tidak akan membosankan karena bukan hanya supir saja yang mengajak anda bicara tapi mobilnya pun bisa di ajak ngobol.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/pulsar135.png"" alt="pulsar135" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>pulsar135</b></p>
+        <p>Pengen pake motor dengan gaya sporty?. cukup 4-5 juta anda bisa mendapatkannya. lumayan buat pulang pergi ngantor</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="./images/suprax99.jpg"" alt="suprax99" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>suprax99</b></p>
+        <p>sama seperti Dilan dengan motor honda CB nya. motor supra x 99 juga bisa dipake buat jalan sama "milea" pas jaman kuliah</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="./images/vario.jpg"" alt="vario" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>vario</b></p>
+        <p>Berbeda dengan bodynya yang montok. ternyata tarikan vario ga kalah gesit dengan yang lainnya.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
